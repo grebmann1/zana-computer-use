@@ -1,0 +1,24 @@
+{
+  "version": "0.33.4",
+  "releaseUrl": "https://github.com/trycua/cua/releases/tag/cua-driver-rs-v0.33.4",
+  "assets": {
+    "darwin": {
+      "archive": "cua-driver-rs-0.33.4-darwin-universal.tar.gz",
+      "sha256": "bf90ac5db76f44baff47e256cb7355959be3e8df3706b9d178505720f02d74c1",
+      "directory": "cua-driver-rs-0.33.4-darwin-universal",
+      "binary": "CuaDriver.app/Contents/MacOS/cua-driver"
+    },
+    "win32-x64": {
+      "archive": "cua-driver-rs-0.33.4-windows-x86_64.zip",
+      "sha256": "e8be645de41d53d46c56b5baea67bd22b374703c7c9ef50a5bd3134ecc2d97d8",
+      "directory": "cua-driver-rs-0.33.4-windows-x86_64",
+      "binary": "cua-driver.exe"
+    },
+    "win32-arm64": {
+      "archive": "cua-driver-rs-0.33.4-windows-arm64.zip",
+      "sha256": "8c459fb1f3508c3256c62c09b2cc2d5be000431ed7b4e386d151127bd186cbd7",
+      "directory": "cua-driver-rs-0.33.4-windows-arm64",
+      "binary": "cua-driver.exe"
+    }
+  }
+}

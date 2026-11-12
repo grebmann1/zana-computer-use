@@ -1,0 +1,49 @@
+{
+  "name": "zcc-plugin-cua-driver-d68f",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "zcc": ">=1.0.0",
+    "zccPluginSdk": ">=0.1.0"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepare:cua": "node scripts/prepare-cua.mjs",
+    "check:cua": "node scripts/prepare-cua.mjs --check"
+  },
+  "zcc": {
+    "name": "Computer Use",
+    "description": "Let ZCC agents see and operate macOS and Windows apps through Cua Driver, with an included driver, setup guide, desktop lease, and safe permission defaults.",
+    "branding": {
+      "icon": "MousePointerClick"
+    },
+    "server": "./server.ts",
+    "app": "./app.tsx",
+    "skills": [
+      "skills"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.2",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@zana-ai/zcc-plugin-sdk": "file:vendor/zana-ai-zcc-plugin-sdk-0.1.0.tgz",
+    "jsdom": "^26.1.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.10"
+  },
+  "license": "MIT",
+  "author": "grebmann1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grebmann1/zana-computer-use.git"
+  },
+  "homepage": "https://github.com/grebmann1/zana-computer-use#readme",
+  "bugs": {
+    "url": "https://github.com/grebmann1/zana-computer-use/issues"
+  }
+}
