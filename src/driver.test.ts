@@ -70,7 +70,7 @@ describe("CuaDriver", () => {
         ? { stdout: '{"accessibility":true,"screen_recording":false}' }
         : { stdout: '{"enabled":false,"source":"user"}' },
     );
-    const driver = new CuaDriver(() => "/bin/cua", exec, () => true);
+    const driver = new CuaDriver(() => "/bin/cua", exec, () => true, { platform: "darwin" });
     expect(await driver.permissions()).toEqual({ accessibility: true, screenRecording: false });
     expect(await driver.telemetry()).toBe(false);
   });
